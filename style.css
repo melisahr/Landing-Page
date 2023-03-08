@@ -1,0 +1,133 @@
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/*Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    background-color: var(--Violet);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    max-width: 1200px;
+     width:100%;
+}
+.logo{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.1rem;
+    margin-bottom: 12px;
+}
+img{
+    width: auto;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    font-size: .9rem;
+    display: block;
+    margin-left: 40px;
+}
+p{
+    line-height: 1.6rem;
+    font-size: 15.5px;
+}
+button{
+    color: var(--Violet);
+    border-radius: 3.2rem;
+    width: 40%;
+    margin: 40px auto;
+    padding-block: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 80px;
+    border: none;
+}
+button:hover{
+    background-color: var(--soft-magenta);
+    color: #fff;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    justify-content: flex-end; 
+}
+.icons ion-icon{
+    border-radius: 50%;
+    border: 2px solid white;
+    color: #fff;
+    display: flex-inline;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+    padding: 12px;
+    text-decoration: none;
+}
+.icons ion-icon:hover{
+    background-color: var(--Violet);
+    color: hsl(300, 85%, 65%);
+    border: 2px solid var(--soft-magenta);;
+    padding: 12px;
+    cursor: pointer;
+}
+@media screen and (max-width: 767px){
+    .container{
+        padding-inline: 10%;
+    }
+    body{
+        background-image: url(images/bg-mobile.svg);
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        max-width: 100%;
+    }
+    .text{
+        padding-top: 10%;
+        text-align: center;
+        margin: 0;
+    }
+    p{
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    button{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20%;
+        width: 60%;
+    }
+    .icons{
+        justify-content: center;
+    }
+}
